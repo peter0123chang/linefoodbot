@@ -5,10 +5,11 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "lib/linbot.js",
     "quickstart.js"
   ],
   "scripts": {
-    "start": "node ."
+    "start": "node lib/linebot.js"
   },
   "repository": {
     "type": "git",
