@@ -1,45 +1,17 @@
 {
   "name": "linefoodbot",
-  "version": "1.3.0",
-  "description": "Node.js SDK for the LINE Messaging API",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "files": [
-    "index.js",
-    "lib/**"
-  ],
   "scripts": {
-    "start": "node lib/linebot.js",
-    "pretest": "eslint index.js lib/**/*.js test/**/*.js",
-    "test": "mocha --timeout 5000",
-    "lint": "eslint index.js lib/**/*.js test/**/*.js"
+    "start": "node ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/peter0123chang/linefoodbot.git"
-  },
-  "keywords": [
-    "LINE",
-    "Messaging",
-    "API",
-    "chat",
-    "bot"
-  ],
-  "author": "Bundit Jitkongchuen",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/peter0123chang/linefoodbot/issues"
-  },
-  "homepage": "https://github.com/peter0123chang/linefoodbot#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "node-fetch": "^1.6.3"
-  },
-  "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-airbnb": "^12.0.0",
-    "eslint-plugin-import": "^1.16.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.4.1",
-    "mocha": "^3.1.0"
+    "express": "^4.15.3",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^19.0.0",
+    "linebot": "^1.3.0"
   }
 }
