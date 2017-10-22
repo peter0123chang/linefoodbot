@@ -99,7 +99,7 @@ function storeToken(token) {
  * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
  */
 function listMajors(auth) {
-  var sheets = google.sheets('v4');
+  var sheets = google.sheets('docs.google.com');
   sheets.spreadsheets.values.get({
     auth: auth,
     spreadsheetId: '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
