@@ -2,8 +2,8 @@ const linebot = require('../index.js');
 
 const bot = linebot({
 	channelId: process.env.CHANNEL_ID,
-	channelSecret: process.env.CHANNEL_SECRET,
-	channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
+	ChannelSecret: process.env.CHANNEL_SECRET,
+	ChannelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
 });
 
 bot.on('message', function (event) {
