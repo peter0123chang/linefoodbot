@@ -27,7 +27,7 @@ bot.on('message', function (event) {
 					event.reply({
 						type: 'location',
 						title: 'LINE Plus Corporation',
-						address: 'No.621,Baoshan Rd.,East Dist.,Hsinchu City,Taiwan,
+						address: 'No.621,Baoshan Rd.,East Dist.,Hsinchu City,Taiwan',
 						latitude: 24.39002068,
 						longitude: 121.1798698
 					});
