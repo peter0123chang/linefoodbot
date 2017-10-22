@@ -1,6 +1,6 @@
-const linefoodbot = require('../index.js');
+const linebot = require('../index.js');
 
-const bot = linefoodbot({
+const bot = linebot({
 	channelId: process.env.CHANNEL_ID,
 	ChannelSecret: process.env.CHANNEL_SECRET,
 	ChannelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
@@ -64,7 +64,7 @@ bot.on('message', function (event) {
 					return event.reply(['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5']);
 					break;
 				case 'Version':
-					event.reply('linefoodbot@' + require('../package.json').version);
+					event.reply('linebot@' + require('../package.json').version);
 					break;
 				default:
 					event.reply(event.message.text).then(function (data) {
