@@ -64,7 +64,7 @@ bot.on('message', function (event) {
 					return event.reply(['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5']);
 					break;
 				case 'Version':
-					event.reply('linebot@' + require('../package.json').version);
+					event.reply('linefoodbot@' + require('../package.json').version);
 					break;
 				default:
 					event.reply(event.message.text).then(function (data) {
