@@ -31,16 +31,13 @@ function getQuestions() {
   sheets.spreadsheets.values.get({
      auth: oauth2Client,
      spreadsheetId: mySheetId,
-     range:encodeURI('問題'),
-  }, function(err, response) {
-     if (err) {
-        console.log('讀取問題檔的API產生問題：' + err);
-        return;
-     }
+     range:encodeURI('問題')},
+     function(err, response) {if(err){console.log('讀取問題檔的API產生問題：' + err);return;}
      var rows = response.values;
-     if (rows.length == 0) {
+     if(rows.length==0){
         console.log('No data found.');
-     } else {
+     }
+     else{
        myQuestions=rows;
        totalSteps=myQuestions[0].length;
        console.log('要問的問題已下載完畢！');
@@ -102,13 +99,7 @@ bot.on('message', function(event) {
 
 
 function sendMessage(eve,msg){
-   eve.reply(msg).then(function(data) {
-      // success 
-      return true;
-   }).catch(function(error) {
-      // error 
-      return false;
-   });
+   eve.reply(msg).then(function(data){return true;}).catch(function(error){return false;});
 }
 
 
