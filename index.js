@@ -1,4 +1,4 @@
-module.exports = require('./lib/linefoodbot');
+module.exports = require('./lib/linebot');
 var linebot = require('linebot');
 var express = require('express');
 
