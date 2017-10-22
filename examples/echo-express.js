@@ -1,7 +1,7 @@
-const linefoodbot = require('../index.js');
+const linebot = require('../index.js');
 const express = require('express');
 
-const bot = linefoodbot({
+const bot = linebot({
 	channelId: process.env.CHANNEL_ID,
 	ChannelSecret: process.env.CHANNEL_SECRET,
 	ChannelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
