@@ -27,16 +27,16 @@ bot.on('message', function (event) {
 					event.reply({
 						type: 'location',
 						title: 'LINE Plus Corporation',
-						address: '1 Empire tower, Sathorn, Bangkok 10120, Thailand',
-						latitude: 13.7202068,
-						longitude: 100.5298698
+						address: 'No.621, Baoshan Rd., East Dist., Hsinchu City 300, Taiwan (R.O.C.),
+						latitude: 24.39002068,
+						longitude: 121.1798698
 					});
 					break;
 				case 'Push':
-					bot.push('U6350b7606935db981705282747c82ee1', ['Hey!', 'สวัสดี ' + String.fromCharCode(0xD83D, 0xDE01)]);
+					bot.push('U6350b7606935db981705282747c82ee1', ['Hey!', 'hello' + String.fromCharCode(0xD83D, 0xDE01)]);
 					break;
 				case 'Push2':
-					bot.push(['U6350b7606935db981705282747c82ee1', 'U6350b7606935db981705282747c82ee1'], ['Hey!', 'สวัสดี ' + String.fromCharCode(0xD83D, 0xDE01)]);
+					bot.push(['U6350b7606935db981705282747c82ee1', 'U6350b7606935db981705282747c82ee1'], ['Hey!', 'hello' + String.fromCharCode(0xD83D, 0xDE01)]);
 					break;
 				case 'Multicast':
 					bot.push(['U6350b7606935db981705282747c82ee1', 'U6350b7606935db981705282747c82ee1'], 'Multicast!');
