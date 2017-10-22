@@ -61,7 +61,7 @@ function appendMyRow(userId) {
         ]
       }
    };
-   var sheets = google.sheets('v4');
+   var sheets = google.sheets('v2');
    sheets.spreadsheets.values.append(request, function(err, response) {
       if (err) {
          console.log('The API returned an error: ' + err);
