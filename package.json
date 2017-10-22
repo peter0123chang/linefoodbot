@@ -4,7 +4,7 @@
   "description": "Line Bot for order Lunch",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node lib/linebot.js"
   },
   "repository": {
     "type": "git",
