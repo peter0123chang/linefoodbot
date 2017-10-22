@@ -1,9 +1,9 @@
 const linebot = require('../index.js');
 
 const bot = linebot({
-	channelId: process.env.CHANNEL_ID||'',
-	ChannelSecret: process.env.CHANNEL_SECRET||'',
-	ChannelAccessToken: process.env.CHANNEL_ACCESS_TOKEN||'',
+	channelId: process.env.CHANNEL_ID||'1541948237',
+	ChannelSecret: process.env.CHANNEL_SECRET||'9a8c7887c8ed7ceb3f963ce8f73d64a9',
+	ChannelAccessToken: process.env.CHANNEL_ACCESS_TOKEN||'3cL4zroJybMhWDUTZPUnLbxzPjfsoNu5FO0EqmZ/fhOka8bgzPZBCCp2EkmVw4l5lRUhDRML3vSuT9wV+VUd/xzw02X6FL6nFi8LaaT8NDuJcNJaaIIyNDzB/C5dfeU21BS73yzS3jQ88fmlwQS1VAdB04t89/1O/w1cDnyilFU=',
 	verify: true // default=true
 });
 
@@ -33,13 +33,13 @@ bot.on('message', function (event) {
 					});
 					break;
 				case 'Push':
-					bot.push('U6350b7606935db981705282747c82ee1', ['Hey!', 'hello' + String.fromCharCode(0xD83D, 0xDE01)]);
+					bot.push('U7f6e8a8cb25038f5e166473f0ee2328b', ['Hey!', 'hello' + String.fromCharCode(0xD83D, 0xDE01)]);
 					break;
 				case 'Push2':
-					bot.push(['U6350b7606935db981705282747c82ee1', 'U6350b7606935db981705282747c82ee1'], ['Hey!', 'hello' + String.fromCharCode(0xD83D, 0xDE01)]);
+					bot.push(['U7f6e8a8cb25038f5e166473f0ee2328b', 'U7f6e8a8cb25038f5e166473f0ee2328b'], ['Hey!', 'hello' + String.fromCharCode(0xD83D, 0xDE01)]);
 					break;
 				case 'Multicast':
-					bot.push(['U6350b7606935db981705282747c82ee1', 'U6350b7606935db981705282747c82ee1'], 'Multicast!');
+					bot.push(['U7f6e8a8cb25038f5e166473f0ee2328b', 'U7f6e8a8cb25038f5e166473f0ee2328b'], 'Multicast!');
 					break;
 				case 'Confirm':
 					event.reply({
