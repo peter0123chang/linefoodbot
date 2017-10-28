@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'test') {
 if (process.env.NODE_ENV !== 'production') {
   require('./config/babelPlugins');
 }
-
+/*
 require('./config/bootstrap');
 {
   "name": "linefoodbot",
@@ -38,3 +38,4 @@ require('./config/bootstrap');
     }
   ]
 }
+*/
