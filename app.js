@@ -11,3 +11,30 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 require('./config/bootstrap');
+{
+  "name": "linefoodbot",
+  "description": "Food for Lunch",
+  "scripts": {
+  },
+  "env": {
+    "ChannelAccessToken": {
+      "required": true
+    },
+    "channelId": {
+      "required": true
+    },
+    "ChannelSecret": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
